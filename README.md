@@ -11,66 +11,70 @@ We’ve been tasked by SellBy with analyzing Amazon reviews written by members o
 
 ## Results
 <b><i>Naive Random Oversampling</b>
-- There are 32 Vine (Paid) reviews.
-- There are 12,518,670 non-Vine reviews.
+- Balanced Accuracy Score is 0.4856
+- Precision is 0.99
+- Sensitivity is 0.07
+- F1 is 0.11
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/random_oversampler_results_short.png" width="400">
 
-
 <b>SMOTE Oversampling</b>
-- There are 17 Vine 5 Star reviews.
-- There are 7,678,534 non-Vine 5 Star reviews.
+- Balanced Accuracy Score is 0.8388
+- Precision is 0.99
+- Sensitivity is 0.08
+- F1 is 0.14
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/smote_results_short.png" width="400">
   
-
 <b>Undersampling</b>
-- There are no Vine most helpful reviews.
-- The percentage of non-Vine most helpful reviews were 5 stars is 39%.
+- Balanced Accuracy Score is 0.8388
+- Precision is 0.99
+- Sensitivity is 0.87
+- F1 is 0.92
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/cluster_centroids_results_short.png" width="400">
   
-
-<b>Combination (Over and Under) Sampling</b>
-- There are no Vine most helpful reviews.
-- The percentage of non-Vine most helpful reviews were 5 stars is 39%.
+<b>Combination (Over and Under) Sampling with SMOTEENN</b>
+- Balanced Accuracy Score is 0.8438
+- Precision is 0.99
+- Sensitivity is 0.86
+- F1 is 0.92
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/smoteenn_results_short.png" width="400">
   
-
 <b>Balanced Random Forest Classifier</b>
-- There are no Vine most helpful reviews.
-- The percentage of non-Vine most helpful reviews were 5 stars is 39%.
+- Balanced Accuracy Score is 0.6830
+- Precision is 1.00
+- Sensitivity is 1.00 
+- F1 is 1.00
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/random_forest_results_short.png" width="400">
   
-
 <b>Easy Ensemble AdaBoost Classifier</b>
-- There are no Vine most helpful reviews.
-- The percentage of non-Vine most helpful reviews were 5 stars is 39%.
+- Balanced Accuracy Score is 0.6879
+- Precision is 1.00
+- Sensitivity is 1.00
+- F1 is 1.00
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/AdaBoost_results_short.png" width="400">
   
-
 <b>Model Tester</b>
-- There are no Vine most helpful reviews.
-- The percentage of non-Vine most helpful reviews were 5 stars is 39%.
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/bonus.png" width="600">
 </i>
 
 ## Summary and Recommendations
-The summary results for all ML models is shown in Table 1. <strong>The overall best-performing Machine Learning (ML) model was the EasyEnsemble with AdaBoost classifier</strong>. It's Balanced Accuracy Score (Acc) was .9317 (93.17%), which was the highest of any of the models. Precision (Prec), Sensitivity/Recall (Sens), and Harmonic Mean (F1) are shown for the 'High-Risk' (H) and 'Low-Risk' (L) categories, and Average (Avg) over both H &amp; L.
+The table below is the summary results for all the Machine Learning (ML) models. The overall best ML model was the Easy Emsemble with AdaBoost Classifer. It's Balanced Accuracy Score is 0.6879, Precision is 1.00, Sensitivity is 1.00, and F1 is 1.00.
 
 <p dir="auto">Table 1. Comparison of ML Model Performance Metrics</p>
 <table>
 <thead>
 <tr>
 <th align="left">Model</th>
-<th align="right">Acc</th>
-<th align="right">Prec  (H/L/Avg)</th>
-<th align="right">Sens (H/L/Avg)</th>
-<th align="right">F1 (H/L/Avg)</th>
+<th align="right">Balanced Accuracy Score</th>
+<th align="right">Precision  (H/L/Avg)</th>
+<th align="right">Sensitivity (H/L/Avg)</th>
+<th align="right">Harmonic Mean (F1) (H/L/Avg)</th>
 </tr>
 </thead>
 <tbody>
@@ -110,11 +114,11 @@ The summary results for all ML models is shown in Table 1. <strong>The overall b
 <td align="right">0.52 / 1.00 / 1.00</td>
 </tr>
 <tr>
-<td align="left">Easy Ensemble AdaBoost Classifier</td>
+<td align="left"><strong>Easy Ensemble AdaBoost Classifier</td>
 <td align="right">0.6879</strong></td>
 <td align="right">0.88 / 1.00 / 1.00</td>
 <td align="right">0.38 / 1.00 / 1.00</td>
-<td align="right">0.53 / 1.00 / 1.00</td>
+<td align="right">0.53 / 1.00 / 1.00</td></strong>
 </tr>
 </tbody>
 </table>
