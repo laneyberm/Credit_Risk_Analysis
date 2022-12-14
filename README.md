@@ -62,10 +62,10 @@ Using these algorithms, we’ll resample the dataset, view the count of the targ
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/random_forest_results_short.png" width="400">
   
 <b>Easy Ensemble AdaBoost Classifier</b>
-- Balanced Accuracy Score is 0.6879
-- Precision is 1.00
-- Sensitivity is 1.00
-- F1 is 1.00
+- Balanced Accuracy Score is 0.9316
+- Precision is 0.99
+- Sensitivity is 0.94
+- F1 is 0.97
 
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/AdaBoost_results_short.png" width="400">
   
@@ -83,7 +83,7 @@ Using these algorithms, we’ll resample the dataset, view the count of the targ
 <img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/best_results.png" width="600">
 
 ## Summary and Recommendations
-The table below is the summary results for all the Machine Learning (ML) models. The overall best ML model was the Easy Emsemble with AdaBoost Classifer. It's Balanced Accuracy Score is 0.6879, Precision is 1.00, Sensitivity is 1.00, and F1 is 1.00. In addition to the ML models, we ran a Model Tester with different parameters in n_estimators to see if ther are other conditions that would have a better Machine Learning model. From the model testing, we found that the best recommendation model is the Easy Ensemble AdaBoost Classifier with n_estimators of 200 on whether they should be used to predict credit risk. 
+The table below is the summary results for all the Machine Learning (ML) models. The overall best ML model was the Easy Emsemble with AdaBoost Classifer. It's Balanced Accuracy Score is 0.9316, Precision is 1.00, Sensitivity is 1.00, and F1 is 1.00. In addition to the ML models, we ran a Model Tester with different parameters in n_estimators to see if ther are other conditions that would have a better Machine Learning model. But found that the Easy Ensemble AdaBoost Classifier was still the best recommendation to predict credit risk. 
 
 <p dir="auto">Comparison of ML Model Performance Metrics</p>
 <table>
@@ -134,10 +134,10 @@ The table below is the summary results for all the Machine Learning (ML) models.
 </tr>
 <tr>
 <td align="left"><strong>Easy Ensemble AdaBoost Classifier</strong></td>
-<td align="right"><strong>0.6879</strong></td>
-<td align="right"><strong>0.88 / 1.00 / 1.00</strong></td>
-<td align="right"><strong>0.38 / 1.00 / 1.00</strong></td>
-<td align="right"><strong>0.53 / 1.00 / 1.00</strong></td>
+<td align="right"><strong>0.9316</strong></td>
+<td align="right"><strong>0.09 / 1.00 / 0.99</strong></td>
+<td align="right"><strong>0.92 / 0.94 / 0.94</strong></td>
+<td align="right"><strong>0.16 / 0.97 / 0.97</strong></td>
 </tr>
 </tbody>
 </table>
