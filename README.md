@@ -80,10 +80,12 @@ Using these algorithms, we’ll resample the dataset, view the count of the targ
 - F1 is 1.00
 </i>
 
+<img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/best_results.png" width="600">
+
 ## Summary and Recommendations
 The table below is the summary results for all the Machine Learning (ML) models. The overall best ML model was the Easy Emsemble with AdaBoost Classifer. It's Balanced Accuracy Score is 0.6879, Precision is 1.00, Sensitivity is 1.00, and F1 is 1.00. In addition to the ML models, we ran a Model Tester with different parameters in n_estimators to see if ther are other conditions that would have a better Machine Learning model. From the model testing, we found that the best recommendation model is the Easy Ensemble AdaBoost Classifier with n_estimators of 200 on whether they should be used to predict credit risk. 
 
-<p dir="auto">Table 1. Comparison of ML Model Performance Metrics</p>
+<p dir="auto">Comparison of ML Model Performance Metrics</p>
 <table>
 <thead>
 <tr>
