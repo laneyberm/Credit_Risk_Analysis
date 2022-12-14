@@ -1,4 +1,4 @@
-# Credit Risk Analysis
+# Lending Club Credit Card Credit Risk Analysis Using Python
 
 ## Project Overview
 ###  
