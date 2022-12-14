@@ -67,7 +67,7 @@ Using these algorithms, we’ll resample the dataset, view the count of the targ
 - Sensitivity is 0.94
 - F1 is 0.97
 
-<img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/AdaBoost_results_short.png" width="400">
+<img src="https://github.com/laneyberm/Credit_Risk_Analysis/blob/main/Resources/images/AdaBoost_results_short_new.png" width="400">
   
 <b>Model Tester</b>
 
